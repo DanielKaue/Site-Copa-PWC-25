@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabela - Pixelmon WC 25</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .images-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .images-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1100px) {
+      .images-container {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .images-container img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <h1 class="logo">PIXELMON WC 25</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tabela.html" class="active">Tabela</a></li>
+          <li><a href="rodadas.html">Rodadas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="sobre">
+      <h3>Acompanhe a tabela da liga em tempo real no nosso Discord!</h3>
+      <p>Para entrar, acesse a página inicial e clique em "Inscreva-se"</p>
+      <div class="images-container">
+        <img src="imagens/tabela1.png" alt="Tabela Imagem 1" />
+        <img src="imagens/tabela2.png" alt="Tabela Imagem 2" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pixelmon WC. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
